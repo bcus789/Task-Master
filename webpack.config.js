@@ -14,7 +14,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/, //question mark makew scss optional for cs reset compatibility
         use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
