@@ -30,9 +30,9 @@ export default class IndecisionApp extends React.Component {
   };
   handleAddOption = option => {
     if (!option) {
-      return "Please actually add an item";
+      return "Don't play games, fool. Add something";
     } else if (this.state.options.indexOf(option) > -1) {
-      return "This option already exists";
+      return "This task already exists, imbicile";
     }
 
     this.setState(prevState => ({
@@ -79,7 +79,7 @@ export default class IndecisionApp extends React.Component {
         <AddOption handleAddOption={this.handleAddOption} />
         <OptionModal
           selectedOption={this.state.selectedOption}
-          handleCloseModal={this.handleClearSelectedOption}
+          handleClearSelectedOption={this.handleClearSelectedOption}
         />
       </div>
     );

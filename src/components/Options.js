@@ -4,8 +4,8 @@ import Option from "./Option.js";
 const Options = props => {
   return (
     <div>
-      <button onClick={props.handleDeleteOptions}>Remove All</button>
-      {props.options.length === 0 && <p>Nothing to see here yet</p>}
+      <button onClick={props.handleDeleteOptions}>Dissolve All Tasks</button>
+      {props.options.length === 0 && <p>No Tasks. For Now.</p>}
       {props.options.map(option => (
         <Option
           key={option}

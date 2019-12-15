@@ -3,9 +3,9 @@ import Modal from "react-modal";
 
 const OptionModal = props => (
   <Modal isOpen={!!props.selectedOption} contentLabel="Selected Option">
-    <h3>Selected Option</h3>
+    <h3>It is Decided</h3>
     {props.selectedOption && <p>{props.selectedOption}</p>}
-    <button onClick={props.handleCloseModal}>Okay</button>
+    <button onClick={props.handleClearSelectedOption}>Yes My Lord</button>
   </Modal>
 );
 
