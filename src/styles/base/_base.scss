@@ -2,6 +2,7 @@ html {
   font-size: 62.5%; /*converts rem to use base ten for pixels instead of 16 */
 }
 body {
+  background: $dark-blue;
   font-family: Helvetica, Arial;
-  font-size: 1.6rem;
+  font-size: $m-size;
 }
