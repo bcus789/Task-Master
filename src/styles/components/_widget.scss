@@ -1,3 +1,19 @@
+//Widget
+.widget {
+  background: $light-blue;
+  margin-bottom: $xl-size;
+}
+
+.widget__message {
+  color: $off-white;
+  border-bottom: 1px solid darken($light-blue, 10%);
+  display: flex;
+  justify-content: center; // andrew doesn't use flex here
+  margin: 0;
+  padding: $l-size;
+}
+
+
 // Widget Header
 
 .widget-header {
