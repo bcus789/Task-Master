@@ -6,3 +6,13 @@ body {
   font-family: Helvetica, Arial;
   font-size: $m-size;
 }
+
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
