@@ -1,10 +1,8 @@
 import React from "react";
 
 const Option = props => (
-  <div>
-    <div className="widget-header">
-      <h3>Your Duties</h3>
-      {props.optionText}
+  <div className="option">
+  <p className="option__text">{props.count}. {props.optionText}</p>
       <button
         className="button button--link"
         onClick={e => {
@@ -13,7 +11,6 @@ const Option = props => (
       >
         Dissolve Task
       </button>
-    </div>
   </div>
 );
 

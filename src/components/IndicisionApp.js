@@ -30,9 +30,9 @@ export default class IndecisionApp extends React.Component {
   };
   handleAddOption = option => {
     if (!option) {
-      return "Don't play games, fool. Add something";
+      return "Add something, you fool!";
     } else if (this.state.options.indexOf(option) > -1) {
-      return "This task already exists, imbicile";
+      return "This task already exists, imbecile";
     }
 
     this.setState(prevState => ({
